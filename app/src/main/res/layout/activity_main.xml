@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="Digital Library"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_logo"
+        app:layout_constraintStart_toStartOf="@+id/imageView_logo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_logo" />
+
+    <Button
+        android:id="@+id/btn_all_book"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="See All Books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/btn_current_reading"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Currently Reading"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_all_book"
+        app:layout_constraintStart_toStartOf="@+id/btn_all_book"
+        app:layout_constraintTop_toBottomOf="@+id/btn_all_book" />
+
+    <Button
+        android:id="@+id/btn_already_read"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Already Read"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_current_reading"
+        app:layout_constraintStart_toStartOf="@+id/btn_current_reading"
+        app:layout_constraintTop_toBottomOf="@+id/btn_current_reading" />
+
+    <Button
+        android:id="@+id/btn_wishlist"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your Wishlist"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_already_read"
+        app:layout_constraintStart_toStartOf="@+id/btn_already_read"
+        app:layout_constraintTop_toBottomOf="@+id/btn_already_read" />
+
+    <Button
+        android:id="@+id/btn_favourite"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="See Your Favourite"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_wishlist"
+        app:layout_constraintStart_toStartOf="@+id/btn_wishlist"
+        app:layout_constraintTop_toBottomOf="@+id/btn_wishlist" />
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ABOUT"
+        app:layout_constraintEnd_toEndOf="@+id/btn_favourite"
+        app:layout_constraintStart_toStartOf="@+id/btn_favourite"
+        app:layout_constraintTop_toBottomOf="@+id/btn_favourite" />
+
+    <TextView
+        android:id="@+id/textView_developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Developed by Sohaib Khan"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="256dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

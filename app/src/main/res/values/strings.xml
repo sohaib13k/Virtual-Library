@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Digital Library</string>
+    <string name="activity_all_book">All Books</string>
+    <string name="book_details">Book Details</string>
+    <string name="activity_already_read">Already Read</string>
+    <string name="activity_current_reading">Current Reading</string>
+    <string name="activity_favourite">Favourites</string>
+    <string name="activity_wishlist">Wishlist</string>
+</resources>
